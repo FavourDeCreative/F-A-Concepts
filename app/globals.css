@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --pc: #b0060d;
+  --sc: #041496;
+  --white: #d8d8d8;
+  --hover1: #640b0e;
+  --hover2: #929292;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top{
+  color: var(--white);
+
+}
+
+.cta-btn{
+  background-color: var(--pc);
+}
+
+.tt{
+  color: var(--white);
+}
+.tt:hover{
+  color: var(--pc);
+}
+
+.tn{
+  color: var(--pc);
+
+}
+.tn:hover{
+  color: var(--sc);
+  transform: scale(1.1);
+
+}
+.tb{
+  background: var(--pc);
+  color: var(--sc);
+}
+.tc{
+  color: var(--white);
+}
+.tc:hover{
+  color: var(--hover2);
+  background-color: var(--hover1);
+  transform: scale(1.05);
+}
+
+.txt{
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.txt2{
+  color: var(--pc);
+  font-size: 3rem;
+}
+.hero-text{
+  color: var(--white);
+
+}
+
+.btn1{
+  color: var(--white);
+  background: var(--pc);
+
+}
+.btn1:hover{
+  color: var(--white);
+  background: var(--hover1);
+  transform: scale(1.05);
+}
+.btn2{
+  color: var(--sc);
+  background: var(--white);
+  cursor: pointer;
+}
+.btn2:hover{
+  color: var(--sc);
+  background: var(--hover2);
+  transform: scale(1.05);
+}
