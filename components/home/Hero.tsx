@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -78,4 +79,4 @@ export default function Hero() {
       </div>
     </section>
   );
-}
+};

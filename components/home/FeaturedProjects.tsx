@@ -62,7 +62,7 @@ export default function FeaturedProjects() {
 
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="project-title text-4xl md:text-5xl font-bold">
+        <h2 className="project-title text-4xl md:text-5xl font-bold txt2">
           Featured Projects
         </h2>
 

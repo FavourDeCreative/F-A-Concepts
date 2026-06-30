@@ -110,7 +110,7 @@ export default function Services() {
     <section ref={sectionRef} className="w-full py-20 px-6">
       {/* Header */}
       <div className="text-center mb-10">
-        <h2 className="service-title text-4xl md:text-5xl font-bold">
+        <h2 className="service-title text-4xl md:text-5xl font-bold txt2">
           Our Services
         </h2>
         <p className="mt-4 text-lg opacity-80">Choose a service</p>

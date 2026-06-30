@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -18,10 +19,15 @@ const navLinks = [
 export default function Navbar() {
   const navRef = useRef<HTMLElement>(null);
   const sidebarRef = useRef<HTMLDivElement>(null);
-  const logoRef = useRef<HTMLImageElement>(null);
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolledPastHero, setScrolledPastHero] = useState(false);
+
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  // White navbar only on homepage hero. Everywhere else: glassmorphism.
+  const isWhite = isHome && !scrolledPastHero;
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -58,34 +64,35 @@ export default function Navbar() {
       if (hero) {
         const heroBottom = hero.getBoundingClientRect().bottom;
         setScrolledPastHero(heroBottom <= 0);
+      } else {
+        // No hero on this page (e.g. About, Blog) — treat as scrolled
+        setScrolledPastHero(true);
       }
     };
 
+    handleScroll(); // run once on mount/page change
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    if (!logoRef.current) return;
-    gsap.to(logoRef.current, {
-      opacity: 0,
-      duration: 0.2,
-      onComplete: () => {
-        gsap.to(logoRef.current, { opacity: 1, duration: 0.3 });
-      },
-    });
-  }, [scrolledPastHero]);
+  }, [pathname]);
 
   return (
     <>
-      <header ref={navRef} className="fixed top-0 left-0 z-50 w-full px-6 py-4">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border px-4 py-1 backdrop-blur-md navi">
-          {/* Logo */}
+      <header
+        ref={navRef}
+        className="fixed top-0 left-0 z-50 w-full px-6 py-4 transition-all duration-300"
+      >
+        <nav
+          className={`mx-auto flex max-w-7xl items-center justify-between rounded-full px-4 py-1 transition-all duration-300 ${
+            isWhite
+              ? "bg-white shadow-md border border-gray-200"
+              : "backdrop-blur-md border border-white/20 bg-white/10"
+          }`}
+        >
+          {/* Logo — always red logo */}
           <div className="logo">
             <Link href="/">
               <Image
-                ref={logoRef}
-                src={scrolledPastHero ? "/logo1.png" : "/logo-wt.png"}
+                src="/logo1.png"
                 alt="FAC Logo"
                 width={60}
                 height={30}
@@ -100,8 +107,10 @@ export default function Navbar() {
               <li key={link.name} className="nav-item">
                 <Link
                   href={link.href}
-                  className={`text-sm font-medium transition-colors duration-200 ${
-                    scrolledPastHero ? "tn" : "tt"
+                  className={`text-sm font-medium transition-colors duration-300 ${
+                    isWhite
+                      ? " tg"
+                      : "tn"
                   }`}
                 >
                   {link.name}
@@ -113,9 +122,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <Link
             href="/contact"
-            className={`cta-btn hidden md:block rounded-full px-6 py-3 text-sm font-semibold border transition-colors duration-200 ${
-              scrolledPastHero ? "tb" : "tc"
-            }`}
+            className="cta-btn hidden md:block rounded-full px-6 py-3 text-sm font-semibold border"
           >
             Get Info
           </Link>
@@ -123,7 +130,9 @@ export default function Navbar() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setIsOpen(true)}
-            className={`md:hidden text-2xl text-white transition-colors duration-200 ${scrolledPastHero ? "tn" : "tt"}`}
+            className={`md:hidden text-2xl transition-colors duration-300 ${
+              isWhite ? "text-gray-800" : "text-white"
+            }`}
           >
             <FaBars />
           </button>
@@ -141,7 +150,7 @@ export default function Navbar() {
       {/* Sidebar */}
       <div
         ref={sidebarRef}
-        className="fixed top-0 right-0 z-[60] h-screen w-[280px] translate-x-full border-l backdrop-blur-lg"
+        className="fixed top-0 right-0 z-[60] h-screen w-[280px] translate-x-full border-l backdrop-blur-lg bg-black/80"
       >
         <div className="flex items-center justify-between p-6">
           <h2 className="text-lg font-semibold text-white">Menu</h2>

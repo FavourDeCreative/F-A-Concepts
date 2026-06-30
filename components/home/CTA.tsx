@@ -85,7 +85,7 @@ export default function CTA() {
 
         {/* Subtitle */}
         <p className="cta-sub mt-5 text-lg md:text-xl opacity-80 max-w-2xl">
-          Book an appointment with FAC and get your car handled by experts. We're one call away.
+          Book an appointment with FAC and get your car handled by experts. we're one call away.
         </p>
 
         {/* Primary Buttons — larger */}

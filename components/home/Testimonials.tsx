@@ -100,7 +100,7 @@ export default function Testimonials() {
     <section ref={sectionRef} className="w-full py-24 px-6">
       {/* Header */}
       <div className="text-center mb-14">
-        <h2 className="test-title text-4xl md:text-5xl font-bold">
+        <h2 className="test-title text-4xl md:text-5xl font-bold txt2">
           What Clients Say
         </h2>
         <p className="mt-4 text-lg opacity-80">

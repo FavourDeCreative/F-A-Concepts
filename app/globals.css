@@ -50,7 +50,10 @@ html {
   background-color: var(--hover1);
   transform: scale(1.05);
 }
-
+.tg{
+  color: var(--sc);
+  
+}
 .txt{
   color: var(--white);
   font-size: 1.2rem;

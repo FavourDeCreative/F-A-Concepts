@@ -5,9 +5,98 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 
 export const metadata: Metadata = {
-  title: "Favouritech Auto Concepts",
+  metadataBase: new URL("https://yourdomain.com"),
+
+  title: {
+    default: "Favouritech Auto Concepts | Premium Automotive Services",
+    template: "%s | Favouritech Auto Concepts",
+  },
+
   description:
-    "Professional automotive repairs, infotainment installation, tinting, diagnostics and vehicle upgrades.",
+    "Favouritech Auto Concepts offers professional vehicle diagnostics, auto electrical repairs, Android screen installation, ambient lighting, car tinting, detailing, infotainment systems, and premium vehicle upgrades.",
+
+  keywords: [
+    "Favouritech Auto Concepts",
+    "Auto repair",
+    "Vehicle diagnostics",
+    "Car tinting",
+    "Vehicle upgrades",
+    "Auto electrician",
+    "Android screen installation",
+    "Ambient lighting",
+    "Car detailing",
+    "Infotainment installation",
+    "Automotive workshop",
+    "Nigeria",
+  ],
+
+  authors: [
+    {
+      name: "Favouritech Auto Concepts",
+    },
+  ],
+
+  creator: "Favouritech Auto Concepts",
+
+  publisher: "Favouritech Auto Concepts",
+
+  category: "Automotive",
+
+  robots: {
+    index: true,
+    follow: true,
+
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_NG",
+    siteName: "Favouritech Auto Concepts",
+
+    title: "Favouritech Auto Concepts",
+
+    description:
+      "Premium automotive diagnostics, repairs, infotainment installation, detailing, tinting and vehicle upgrades.",
+
+    url: "https://yourdomain.com",
+
+    images: [
+      {
+        url: "/opengraph-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Favouritech Auto Concepts",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Favouritech Auto Concepts",
+
+    description:
+      "Professional automotive diagnostics, repairs and vehicle upgrades.",
+
+    images: ["/opengraph-image.jpg"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
