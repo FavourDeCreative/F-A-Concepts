@@ -93,9 +93,19 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      {
+        url: "/favicon.png",
+        type: "image/png",
+        sizes: "64x64",
+      },
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+        sizes: "32x32",
+      },
+    ],
     shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
   },
 };
 

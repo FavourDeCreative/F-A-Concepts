@@ -29,6 +29,9 @@ html {
 .tt:hover{
   color: var(--pc);
 }
+.tt3{
+  color: var(--pc);
+}
 
 .tn{
   color: var(--pc);

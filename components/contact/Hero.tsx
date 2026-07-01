@@ -42,7 +42,7 @@ export default function ContactHero() {
     >
       {/* Background */}
       <img
-        src="/contact/contact-hero.jpg"
+        src="/hero-bg.jpg"
         alt="Contact Favouritech Auto Concepts"
         className="absolute inset-0 h-full w-full object-cover"
       />
@@ -52,7 +52,7 @@ export default function ContactHero() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
-        <h1 className="hero-title text-5xl font-bold md:text-6xl">
+        <h1 className="hero-title text-5xl font-bold md:text-6xl txt2">
           Get In Touch
         </h1>
 
@@ -63,8 +63,8 @@ export default function ContactHero() {
 
         <div className="hero-buttons mt-10 flex flex-wrap justify-center gap-4">
           <Link
-            href="/contact"
-            className="flex items-center gap-3 rounded-full bg-red-700 px-8 py-4 font-semibold transition hover:scale-105"
+            href="#contact-form"
+            className="flex items-center gap-3 rounded-full px-8 py-4 font-semibold transition btn1"
           >
             <FaCalendarCheck />
             Book Appointment
@@ -72,7 +72,7 @@ export default function ContactHero() {
 
           <a
             href="tel:+2348012345678"
-            className="flex items-center gap-3 rounded-full border border-white px-8 py-4 font-semibold backdrop-blur-md transition hover:scale-105"
+            className="flex items-center gap-3 rounded-full border px-8 py-4 font-semibold backdrop-blur-md transition btn2"
           >
             <FaPhoneAlt />
             Call Now

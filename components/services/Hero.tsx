@@ -45,7 +45,7 @@ export default function ServicesHero() {
       {/* Content */}
 
       <div className="relative z-10 max-w-4xl px-6 text-center">
-        <h1 className="hero-title text-5xl font-bold md:text-6xl">
+        <h1 className="hero-title text-5xl font-bold md:text-6xl txt2">
           Our Services
         </h1>
 

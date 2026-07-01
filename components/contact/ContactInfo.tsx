@@ -39,13 +39,13 @@ export default function ContactInfo() {
         {/* Heading */}
 
         <div className="mb-16 text-center">
-          <h2 className="info-title text-4xl font-bold md:text-5xl">
+          <h2 className="info-title text-4xl font-bold md:text-5xl cta-title">
             Contact Information
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-80">
+          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-80 txt3">
             Reach out to Favouritech Auto Concepts through any of the channels
-            below. We'd love to hear from you.
+            below. We&apos;d love to hear from you.
           </p>
         </div>
 
@@ -54,14 +54,14 @@ export default function ContactInfo() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Address */}
 
-          <div className="info-card rounded-3xl border p-8 transition duration-300 hover:-translate-y-2">
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-red-700 text-white">
+          <div className="info-card rounded-3xl border p-8 transition duration-300 hover:-translate-y-2 gd">
+            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full btn1">
               <FaMapMarkerAlt size={22} />
             </div>
 
-            <h3 className="text-2xl font-semibold">Address</h3>
+            <h3 className="text-2xl font-semibold tt3">Address</h3>
 
-            <p className="mt-4 opacity-80">
+            <p className="mt-4 opacity-80 txt3">
               123 Aba Road,
               <br />
               Port Harcourt,
@@ -72,16 +72,16 @@ export default function ContactInfo() {
 
           {/* Phone */}
 
-          <div className="info-card rounded-3xl border p-8 transition duration-300 hover:-translate-y-2">
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-red-700 text-white">
+          <div className="info-card rounded-3xl border p-8 transition duration-300 hover:-translate-y-2 gd">
+            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full btn1">
               <FaPhoneAlt size={22} />
             </div>
 
-            <h3 className="text-2xl font-semibold">Phone</h3>
+            <h3 className="text-2xl font-semibold tt3">Phone</h3>
 
             <a
               href="tel:+2348012345678"
-              className="mt-4 block opacity-80 hover:opacity-100"
+              className="mt-4 block opacity-80 transition hover:opacity-100 soc"
             >
               +234 801 234 5678
             </a>
@@ -89,16 +89,16 @@ export default function ContactInfo() {
 
           {/* Email */}
 
-          <div className="info-card rounded-3xl border p-8 transition duration-300 hover:-translate-y-2">
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-red-700 text-white">
+          <div className="info-card rounded-3xl border p-8 transition duration-300 hover:-translate-y-2 gd">
+            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full btn1">
               <FaEnvelope size={22} />
             </div>
 
-            <h3 className="text-2xl font-semibold">Email</h3>
+            <h3 className="text-2xl font-semibold tt3">Email</h3>
 
             <a
               href="mailto:info@favouritechautoconcepts.com"
-              className="mt-4 block break-all opacity-80 hover:opacity-100"
+              className="mt-4 block break-all opacity-80 transition hover:opacity-100 soc"
             >
               info@favouritechautoconcepts.com
             </a>
@@ -106,17 +106,17 @@ export default function ContactInfo() {
 
           {/* Hours */}
 
-          <div className="info-card rounded-3xl border p-8 transition duration-300 hover:-translate-y-2">
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-red-700 text-white">
+          <div className="info-card rounded-3xl border p-8 transition duration-300 hover:-translate-y-2 gd">
+            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full btn1">
               <FaClock size={22} />
             </div>
 
-            <h3 className="text-2xl font-semibold">Opening Hours</h3>
+            <h3 className="text-2xl font-semibold tt3">Opening Hours</h3>
 
-            <p className="mt-4 opacity-80">
-              Monday – Saturday
+            <p className="mt-4 opacity-80 txt3">
+              Monday - Saturday
               <br />
-              8:00 AM – 6:00 PM
+              8:00 AM - 6:00 PM
               <br />
               Sunday: Closed
             </p>

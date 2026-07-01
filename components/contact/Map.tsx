@@ -32,11 +32,11 @@ export default function ContactMap() {
         {/* Heading */}
 
         <div className="mb-14 text-center">
-          <h2 className="map-title text-4xl font-bold md:text-5xl">
+          <h2 className="map-title text-4xl font-bold md:text-5xl cta-title">
             Visit Our Workshop
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-80">
+          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-80 txt3">
             Stop by our workshop for diagnostics, repairs, premium upgrades,
             infotainment installations, tinting, detailing and more.
           </p>
@@ -44,7 +44,7 @@ export default function ContactMap() {
 
         {/* Map */}
 
-        <div className="map-card overflow-hidden rounded-[25px] border">
+        <div className="map-card overflow-hidden rounded-[25px] border gd">
           <iframe
             src="https://www.google.com/maps?q=Port%20Harcourt,%20Nigeria&output=embed"
             width="100%"
@@ -62,7 +62,7 @@ export default function ContactMap() {
             href="https://maps.google.com/?q=Port+Harcourt,+Nigeria"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-full bg-red-700 px-8 py-4 font-semibold text-white transition hover:scale-105"
+            className="flex items-center gap-3 rounded-full px-8 py-4 font-semibold transition btn1"
           >
             <FaDirections />
             Get Directions
@@ -72,7 +72,7 @@ export default function ContactMap() {
             href="https://maps.google.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-full border px-8 py-4 font-semibold transition hover:scale-105"
+            className="flex items-center gap-3 rounded-full border px-8 py-4 font-semibold transition btn2"
           >
             <FaMapMarkedAlt />
             Open in Google Maps

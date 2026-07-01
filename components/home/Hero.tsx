@@ -1,6 +1,6 @@
 
 "use client";
-
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { FaCalendarCheck, FaStore } from "react-icons/fa";
@@ -66,17 +66,23 @@ export default function Hero() {
         </p>
 
         <div className="hero-buttons mt-10 flex flex-col gap-4 sm:flex-row">
-          <button className="flex items-center justify-center gap-3 rounded-full px-8 py-4 text-sm font-semibold transition btn1">
+          <Link
+            href="/contact"
+            className="flex items-center justify-center gap-3 rounded-full px-8 py-4 text-sm font-semibold transition btn1"
+          >
             <FaCalendarCheck size={18} />
             Book An Appointment
-          </button>
+          </Link>
 
-          <button className="flex items-center justify-center gap-3 rounded-full px-8 py-4 text-sm font-semibold transition btn2">
+          <Link
+            href="/shop"
+            className="flex items-center justify-center gap-3 rounded-full px-8 py-4 text-sm font-semibold transition btn2"
+          >
             <FaStore size={18} />
             Visit Our Shop
-          </button>
+          </Link>
         </div>
       </div>
     </section>
   );
-};
+}

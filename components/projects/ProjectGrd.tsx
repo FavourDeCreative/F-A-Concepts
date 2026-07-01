@@ -16,7 +16,7 @@ export default async function ProjectsGrid() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-14 text-center">
-          <h2 className="text-4xl font-bold md:text-5xl">Completed Projects</h2>
+          <h2 className="text-4xl font-bold md:text-5xl tt3">Completed Projects</h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-lg opacity-80">
             Explore some of the transformations we've completed for our
@@ -59,7 +59,7 @@ export default async function ProjectsGrid() {
                   {project.service?.title}
                 </span>
 
-                <h3 className="mt-4 text-2xl font-semibold">{project.title}</h3>
+                <h3 className="mt-4 text-2xl font-semibold tt3">{project.title}</h3>
 
                 {/* Vehicle */}
                 <p className="mt-2 text-sm opacity-70">{project.vehicle}</p>

@@ -85,7 +85,7 @@ export default function Navbar() {
           className={`mx-auto flex max-w-7xl items-center justify-between rounded-full px-4 py-1 transition-all duration-300 ${
             isWhite
               ? "bg-white shadow-md border border-gray-200"
-              : "backdrop-blur-md border border-white/20 bg-white/10"
+              : "backdrop-blur-md border border-white/20 bg-white/50"
           }`}
         >
           {/* Logo — always red logo */}
@@ -131,7 +131,7 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(true)}
             className={`md:hidden text-2xl transition-colors duration-300 ${
-              isWhite ? "text-gray-800" : "text-white"
+              isWhite ? "tt3" : "tt2"
             }`}
           >
             <FaBars />

@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "Can I get a quotation before work begins?",
     answer:
-      "Yes. After inspecting your vehicle, we'll provide a detailed quotation before any work is carried out.",
+      "Yes. After inspecting your vehicle, we will provide a detailed quotation before any work is carried out.",
   },
 ];
 
@@ -65,11 +65,11 @@ export default function FAQ() {
     <section ref={sectionRef} className="w-full py-24">
       <div className="mx-auto max-w-5xl px-6">
         <div className="mb-14 text-center">
-          <h2 className="faq-title text-4xl font-bold md:text-5xl">
+          <h2 className="faq-title text-4xl font-bold md:text-5xl cta-title">
             Frequently Asked Questions
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-80">
+          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-80 txt3">
             Find answers to the most common questions about our automotive
             services and how we can help you.
           </p>
@@ -82,7 +82,7 @@ export default function FAQ() {
             return (
               <div
                 key={index}
-                className="faq-item overflow-hidden rounded-2xl border"
+                className="faq-item overflow-hidden rounded-2xl border gd"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
@@ -104,7 +104,7 @@ export default function FAQ() {
                       : "max-h-0 overflow-hidden opacity-0"
                   }`}
                 >
-                  <p className="leading-8 opacity-80">{faq.answer}</p>
+                  <p className="leading-8 opacity-80 txt3">{faq.answer}</p>
                 </div>
               </div>
             );

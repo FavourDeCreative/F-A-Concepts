@@ -13,7 +13,7 @@ export default async function ServicesGrid() {
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold">What We Do</h2>
+          <h2 className="text-4xl font-bold txt2">What We Do</h2>
 
           <p className="mx-auto mt-5 max-w-2xl opacity-80">
             From diagnostics and repairs to premium upgrades, we help transform
@@ -38,13 +38,13 @@ export default async function ServicesGrid() {
               </div>
 
               <div className="p-6">
-                <h3 className="text-2xl font-semibold">{service.title}</h3>
+                <h3 className="text-2xl font-semibold tt3">{service.title}</h3>
 
                 <p className="mt-4 line-clamp-3 opacity-80">
                   {service.shortDescription}
                 </p>
 
-                <div className="mt-6 inline-flex items-center gap-2 transition-all duration-300 group-hover:gap-4">
+                <div className="mt-6 inline-flex items-center gap-2 transition-all duration-300 group-hover:gap-4 btn1 border rounded-full px-2 py-1">
                   Learn More
                   <FaArrowRight />
                 </div>

@@ -58,11 +58,11 @@ export default function ProjectsHero() {
                     {" "}
                     <span className="text-sm"> Home / Projects </span>{" "}
                 </div>{" "}
-                <h1 className="projects-title text-5xl font-bold md:text-6xl lg:text-7xl">
+                <h1 className="projects-title text-5xl font-bold md:text-6xl lg:text-7xl tt3">
                     {" "}
                     Our Projects{" "}
                 </h1>{" "}
-                <p className="projects-text mt-6 max-w-3xl text-lg md:text-xl">
+                <p className="projects-text mt-6 max-w-3xl text-lg md:text-xl txt">
                     {" "}
                     Every vehicle tells a story. Explore our portfolio of completed
                     automotive upgrades, repairs, diagnostics, tinting, infotainment
@@ -71,7 +71,7 @@ export default function ProjectsHero() {
                 </p>{" "}
                 <Link
                     href="/contact"
-                    className="projects-btn mt-10 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-8 py-4 text-sm font-semibold backdrop-blur-md transition-all duration-300 hover:scale-105"
+                    className="projects-btn mt-10 inline-flex items-center gap-3 rounded-full border border-white/20 px-8 py-4 text-sm font-semibold backdrop-blur-md transition-all duration-300 hover:scale-105 btn1"
                 >
                     {" "}
                     Start Your Project <FaArrowRight />{" "}

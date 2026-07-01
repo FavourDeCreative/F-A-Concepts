@@ -34,7 +34,7 @@ export default function ContactForm() {
 
     setLoading(true);
 
-    // We'll connect this to Resend later.
+    // This can be connected to Resend when the email endpoint is ready.
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
     alert("Thank you! Your message has been sent.");
@@ -45,22 +45,22 @@ export default function ContactForm() {
   }
 
   return (
-    <section ref={sectionRef} className="w-full py-24">
+    <section ref={sectionRef} className="w-full py-24" id="contact-form">
       <div className="mx-auto max-w-5xl px-6">
         <div className="mb-14 text-center">
-          <h2 className="form-title text-4xl font-bold md:text-5xl">
+          <h2 className="form-title text-4xl font-bold md:text-5xl cta-title">
             Send Us A Message
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-80">
-            Tell us about your vehicle and the service you're interested in. Our
+          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-80 txt3">
+            Tell us about your vehicle and the service you&apos;re interested in. Our
             team will get back to you as soon as possible.
           </p>
         </div>
 
         <form
           onSubmit={handleSubmit}
-          className="rounded-3xl border p-8 md:p-10"
+          className="rounded-3xl border p-8 md:p-10 gd"
         >
           <div className="grid gap-6 md:grid-cols-2">
             <div className="form-field">
@@ -70,7 +70,7 @@ export default function ContactForm() {
                 type="text"
                 required
                 placeholder="John Doe"
-                className="w-full rounded-xl border bg-transparent p-4 outline-none transition focus:border-red-700"
+                className="w-full rounded-xl border bg-transparent p-4 outline-none transition gd focus:border-[var(--pc)]"
               />
             </div>
 
@@ -81,7 +81,7 @@ export default function ContactForm() {
                 type="email"
                 required
                 placeholder="john@email.com"
-                className="w-full rounded-xl border bg-transparent p-4 outline-none transition focus:border-red-700"
+                className="w-full rounded-xl border bg-transparent p-4 outline-none transition gd focus:border-[var(--pc)]"
               />
             </div>
 
@@ -91,7 +91,7 @@ export default function ContactForm() {
               <input
                 type="tel"
                 placeholder="+234..."
-                className="w-full rounded-xl border bg-transparent p-4 outline-none transition focus:border-red-700"
+                className="w-full rounded-xl border bg-transparent p-4 outline-none transition gd focus:border-[var(--pc)]"
               />
             </div>
 
@@ -101,7 +101,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 placeholder="Toyota Camry 2018"
-                className="w-full rounded-xl border bg-transparent p-4 outline-none transition focus:border-red-700"
+                className="w-full rounded-xl border bg-transparent p-4 outline-none transition gd focus:border-[var(--pc)]"
               />
             </div>
 
@@ -110,7 +110,7 @@ export default function ContactForm() {
                 Service Interested In
               </label>
 
-              <select className="w-full rounded-xl border bg-transparent p-4 outline-none transition focus:border-red-700">
+              <select className="w-full rounded-xl border bg-transparent p-4 outline-none transition gd focus:border-[var(--pc)]">
                 <option>Auto Repairs</option>
                 <option>Vehicle Diagnostics</option>
                 <option>Infotainment Installation</option>
@@ -126,7 +126,7 @@ export default function ContactForm() {
               <textarea
                 rows={7}
                 placeholder="Tell us more about your vehicle..."
-                className="w-full rounded-xl border bg-transparent p-4 outline-none transition focus:border-red-700"
+                className="w-full rounded-xl border bg-transparent p-4 outline-none transition gd focus:border-[var(--pc)]"
               />
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={loading}
-            className="mt-8 flex items-center gap-3 rounded-full bg-red-700 px-8 py-4 font-semibold text-white transition hover:scale-105 disabled:cursor-not-allowed disabled:opacity-70"
+            className="mt-8 flex items-center gap-3 rounded-full px-8 py-4 font-semibold transition btn1 disabled:cursor-not-allowed disabled:opacity-70"
           >
             <FaPaperPlane />
 

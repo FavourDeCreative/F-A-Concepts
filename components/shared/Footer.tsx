@@ -48,7 +48,7 @@ export default function Footer() {
           <div className="flex gap-4 text-xl">
             <a href="#"><FaInstagram /></a>
             <a href="#"><FaFacebookF /></a>
-            <a href="https://wa.me/234XXXXXXXXXX"><FaWhatsapp /></a>
+            <a href="https://wa.me/2349112718068"><FaWhatsapp /></a>
           </div>
         </div>
 
