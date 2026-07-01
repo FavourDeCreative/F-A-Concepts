@@ -187,3 +187,70 @@ vehicle
 
 }
 `;
+//Featured Posts
+export const featuredPostQuery = `
+*[_type=="post" && featured == true][0]{
+  _id,
+  title,
+  slug,
+  excerpt,
+  publishedAt,
+  coverImage,
+
+  author->{
+    name,
+    image
+  },
+
+  categories[]->{
+    title,
+    slug
+  }
+}
+`;
+
+//single post
+
+export const postQuery = `
+*[_type=="post" && slug.current==$slug][0]{
+  _id,
+  title,
+  slug,
+  excerpt,
+  body,
+  publishedAt,
+  coverImage,
+
+  author->{
+    _id,
+    name,
+    role,
+    image,
+    bio
+  },
+
+  categories[]->{
+    title,
+    slug
+  }
+}
+`;
+
+//related post
+export const relatedPostsQuery = `
+*[
+  _type=="post" &&
+  slug.current != $slug
+] | order(publishedAt desc)[0...3]{
+  _id,
+  title,
+  slug,
+  excerpt,
+  coverImage,
+  publishedAt,
+
+  categories[]->{
+    title
+  }
+}
+`;
