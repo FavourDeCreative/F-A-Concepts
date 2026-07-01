@@ -122,7 +122,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <Link
             href="/contact"
-            className="cta-btn hidden md:block rounded-full px-6 py-3 text-sm font-semibold border"
+            className="cta-btn hidden md:block rounded-full px-6 py-3 text-sm font-semibold border btn1"
           >
             Get Info
           </Link>

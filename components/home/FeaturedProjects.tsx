@@ -77,7 +77,7 @@ export default function FeaturedProjects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="project-card group relative overflow-hidden rounded-2xl border bg-white/5 backdrop-blur-md"
+            className="project-card group relative overflow-hidden rounded-2xl border bg-white/5 backdrop-blur-md gd"
           >
             {/* Image */}
             <div className="h-56 w-full overflow-hidden">

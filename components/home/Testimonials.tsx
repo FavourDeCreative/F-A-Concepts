@@ -113,7 +113,7 @@ export default function Testimonials() {
         {/* Prev Button */}
         <button
           onClick={prev}
-          className="rounded-full border bg-white/10 backdrop-blur-md p-4 hover:bg-white/20 transition"
+          className="rounded-full border bg-white/10 backdrop-blur-md p-4 hover:bg-white/20 transition gd"
           aria-label="Previous testimonial"
         >
           <FaChevronLeft size={18} />
@@ -122,7 +122,8 @@ export default function Testimonials() {
         {/* Card */}
         <div
           ref={cardRef}
-          className="test-card w-full max-w-lg rounded-2xl border bg-white/5 backdrop-blur-md p-8 flex flex-col gap-5"
+          className="test-card w-full max-w-lg rounded-2xl border bg-white/5 backdrop-blur-md p-8 flex flex-col gap-5 gd
+          "
         >
           {/* Quote */}
           <FaQuoteLeft className="opacity-60 text-2xl" />
@@ -142,7 +143,7 @@ export default function Testimonials() {
             <img
               src={t.avatar}
               alt={t.name}
-              className="w-12 h-12 rounded-full object-cover border"
+              className="w-12 h-12 rounded-full object-cover border gd"
             />
             <div>
               <p className="font-semibold">{t.name}</p>
@@ -155,7 +156,7 @@ export default function Testimonials() {
         {/* Next Button */}
         <button
           onClick={next}
-          className="rounded-full border bg-white/10 backdrop-blur-md p-4 hover:bg-white/20 transition"
+          className="rounded-full border bg-white/10 backdrop-blur-md p-4 hover:bg-white/20 transition gd"
           aria-label="Next testimonial"
         >
           <FaChevronRight size={18} />

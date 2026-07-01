@@ -26,7 +26,7 @@ export default async function ServicesGrid() {
             <Link
               key={service._id}
               href={`/services/${service.slug.current}`}
-              className="group overflow-hidden rounded-3xl border transition hover:-translate-y-2"
+              className="group overflow-hidden rounded-3xl transition hover:-translate-y-2 gd"
             >
               <div className="relative h-72 overflow-hidden">
                 <Image

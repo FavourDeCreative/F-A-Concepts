@@ -4,6 +4,7 @@
   --pc: #b0060d;
   --sc: #041496;
   --white: #d8d8d8;
+  --black: #080808;
   --hover1: #640b0e;
   --hover2: #929292;
 }
@@ -31,6 +32,7 @@ html {
 
 .tn{
   color: var(--pc);
+  font-weight: 700;
 
 }
 .tn:hover{
@@ -52,6 +54,7 @@ html {
 }
 .tg{
   color: var(--sc);
+  font-weight: 700;
   
 }
 .txt{
@@ -61,6 +64,9 @@ html {
 .txt2{
   color: var(--pc);
   font-size: 3rem;
+}
+.txt3{
+  color: var(--black);
 }
 .hero-text{
   color: var(--white);
@@ -86,4 +92,23 @@ html {
   color: var(--sc);
   background: var(--hover2);
   transform: scale(1.05);
+}
+
+.gd{
+  border: 1px solid var(--pc);
+}
+
+.soc{
+  color: var(--pc);
+
+}
+.soc:hover{
+  color: var(--hover1);
+  transform: scale(1.05);
+  border: 1px solid var(--hover1);
+}
+
+.cta-title{
+  color: var(--pc);
+  font-size: 2rem;
 }

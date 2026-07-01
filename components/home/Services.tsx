@@ -142,7 +142,7 @@ export default function Services() {
           {loopedServices.map((service, index) => (
             <div
               key={index}
-              className="service-card min-w-[280px] md:min-w-[340px] rounded-2xl border bg-white/5 backdrop-blur-md overflow-hidden flex-shrink-0"
+              className="service-card min-w-[280px] md:min-w-[340px] rounded-2xl border bg-white/5 backdrop-blur-md overflow-hidden flex-shrink-0 gd"
             >
               <div className="h-48 w-full overflow-hidden">
                 <img
