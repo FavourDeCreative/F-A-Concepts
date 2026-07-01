@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import {
   FaWhatsapp,
@@ -37,7 +37,9 @@ const socials = [
 export default function CTA() {
   const sectionRef = useRef<HTMLElement>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
+    if (!sectionRef.current) return;
+
     const ctx = gsap.context(() => {
       gsap.fromTo(
         ".cta-title",
@@ -110,12 +112,15 @@ export default function CTA() {
 
   return (
     <section ref={sectionRef} className="relative overflow-hidden py-28">
-      {/* <div
+      {/* Background */}
+      {/*
+      <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/cta-bg.jpg')",
         }}
-      /> */}
+      />
+      */}
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 text-center">
