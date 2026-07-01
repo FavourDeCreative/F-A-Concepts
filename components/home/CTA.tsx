@@ -14,12 +14,12 @@ import {
 const socials = [
   {
     icon: <FaInstagram size={16} />,
-    href: "https://instagram.com/favouritech",
+    href: "https://instagram.com/favouritechautoconcepts",
     label: "Instagram",
   },
   {
     icon: <FaFacebookF size={16} />,
-    href: "https://facebook.com/favouritech",
+    href: "https://www.facebook.com/share/1GJRQktXJY/",
     label: "Facebook",
   },
   {
@@ -29,7 +29,7 @@ const socials = [
   },
   {
     icon: <FaTiktok size={16} />,
-    href: "https://tiktok.com/@favouritech",
+    href: "https://tiktok.com/@favouritechautoconcepts",
     label: "TikTok",
   },
 ];
@@ -135,7 +135,7 @@ export default function CTA() {
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
-            href="https://wa.me/234XXXXXXXXXX"
+            href="https://wa.me/2349112718068"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-btn inline-flex items-center gap-3 rounded-full bg-green-600 px-8 py-4 font-semibold text-white transition hover:scale-105 hover:bg-green-700"
@@ -145,7 +145,7 @@ export default function CTA() {
           </a>
 
           <a
-            href="tel:+234XXXXXXXXXX"
+            href="tel:+2348167624681"
             className="cta-btn inline-flex items-center gap-3 rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-black"
           >
             <FaPhone size={20} />
