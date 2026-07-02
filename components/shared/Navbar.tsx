@@ -135,7 +135,7 @@ export default function Navbar() {
                   href={link.href}
                   className={`text-sm font-medium transition-colors duration-300 ${
                     isWhite
-                      ? " tg"
+                      ? "ty"
                       : "tn"
                   }`}
                 >

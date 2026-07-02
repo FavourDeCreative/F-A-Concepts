@@ -45,7 +45,7 @@ export default function BlogHero() {
           Automotive Guides
         </h1>
 
-        <p className="hero-text mx-auto mt-8 max-w-3xl text-lg opacity-80 txt3">
+        <p className="mx-auto mt-8 max-w-3xl text-lg opacity-80 txt3">
           Discover expert advice on vehicle diagnostics, maintenance, repairs,
           infotainment systems, premium upgrades, detailing and everything you
           need to keep your vehicle performing at its best.
