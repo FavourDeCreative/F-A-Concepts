@@ -39,13 +39,13 @@ export default function BlogHero() {
           FAC BLOG
         </span>
 
-        <h1 className="hero-title mt-8 text-5xl font-bold leading-tight md:text-7xl">
+        <h1 className="hero-title mt-8 text-5xl font-bold leading-tight md:text-7xl tt3">
           Insights, Tips &
           <br />
           Automotive Guides
         </h1>
 
-        <p className="hero-text mx-auto mt-8 max-w-3xl text-lg opacity-80">
+        <p className="hero-text mx-auto mt-8 max-w-3xl text-lg opacity-80 txt3">
           Discover expert advice on vehicle diagnostics, maintenance, repairs,
           infotainment systems, premium upgrades, detailing and everything you
           need to keep your vehicle performing at its best.

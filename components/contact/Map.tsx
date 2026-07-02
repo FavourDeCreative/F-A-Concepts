@@ -46,8 +46,9 @@ export default function ContactMap() {
 
         <div className="map-card overflow-hidden rounded-[25px] border gd">
           <iframe
-            src="https://www.google.com/maps?q=Port%20Harcourt,%20Nigeria&output=embed"
-            width="100%"
+            src="
+            https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7925.872271719471!2d3.318057665800323!3d6.654838123360079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b96b462b00c6f%3A0xf96c0ecdd7eb10a5!2sFagba%20(Garri%20Market%20Area)!5e0!3m2!1sen!2sng!4v1783024328254!5m2!1sen!2sng"
+            width="1000"
             height="550"
             loading="lazy"
             allowFullScreen
@@ -59,7 +60,7 @@ export default function ContactMap() {
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
-            href="https://maps.google.com/?q=Port+Harcourt,+Nigeria"
+            href="https://maps.app.goo.gl/FRhic3zCdzvDXhgw8"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 rounded-full px-8 py-4 font-semibold transition btn1"
@@ -69,7 +70,7 @@ export default function ContactMap() {
           </a>
 
           <a
-            href="https://maps.google.com"
+            href="https://maps.app.goo.gl/FRhic3zCdzvDXhgw8"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 rounded-full border px-8 py-4 font-semibold transition btn2"
