@@ -5,7 +5,7 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://www.faconcepts.com.ng"),
 
   title: {
     default: "Favouritech Auto Concepts | Premium Automotive Services",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     description:
       "Premium automotive diagnostics, repairs, infotainment installation, detailing, tinting and vehicle upgrades.",
 
-    url: "https://yourdomain.com",
+    url: "https://www.faconcepts.com.ng",
 
     images: [
       {
