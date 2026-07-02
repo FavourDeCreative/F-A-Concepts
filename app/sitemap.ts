@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 import { client } from "@/lib/sanity.client";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://yourdomain.com";
+  const baseUrl = "https://www.faconcepts.com.ng";
 
   const services = await client.fetch(`
     *[_type=="service"]{
