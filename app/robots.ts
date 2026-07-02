@@ -7,8 +7,8 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
 
-    sitemap: "https://yourdomain.com/sitemap.xml",
+    sitemap: "https://www.faconcepts.com.ng",
 
-    host: "https://yourdomain.com",
+    host: "https://www.faconcepts.com.ng",
   };
 }
