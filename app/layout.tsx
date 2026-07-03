@@ -42,6 +42,12 @@ export const metadata: Metadata = {
 
   category: "Automotive",
 
+  verification: {
+    other: {
+      "msvalidate.01": "B734DBC791CD1DC9FA4BB8079F412896",
+    },
+  },
+
   robots: {
     index: true,
     follow: true,
@@ -106,6 +112,12 @@ export const metadata: Metadata = {
       },
     ],
     shortcut: "/favicon.ico",
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+      },
+    ],
   },
 };
 
