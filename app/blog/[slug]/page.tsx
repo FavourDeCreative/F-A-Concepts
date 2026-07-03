@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PortableText } from "@portabletext/react";
+import { portableTextComponents } from "@/lib/portableTextComponents";
 import { FaCalendarAlt, FaChevronRight, FaClock, FaUser } from "react-icons/fa";
 import ShareButtons from "@/components/blog/slug/ShareButtons";
 import RelatedPosts from "@/components/blog/slug/RelatedPosts";
@@ -132,7 +133,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* ================= Article ================= */}
 
         <article className="prose prose-lg mt-16 max-w-none">
-          <PortableText value={post.body} />
+          <PortableText value={post.body} components={portableTextComponents} />
           <ShareButtons title={post.title} />
           <RelatedPosts posts={relatedPosts} />
         </article>
