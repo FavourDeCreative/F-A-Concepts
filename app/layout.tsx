@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
+
 import PageLoader from "@/components/shared/Loader";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
@@ -111,7 +113,9 @@ export const metadata: Metadata = {
         sizes: "32x32",
       },
     ],
+
     shortcut: "/favicon.ico",
+
     apple: [
       {
         url: "/apple-touch-icon.png",
@@ -128,11 +132,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         <PageLoader />
+
         <Navbar />
+
         {children}
+
         <Footer />
+
+        {/* Tawk.to Live Chat */}
+        <Script id="tawk-to" strategy="afterInteractive">
+          {`
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function() {
+              var s1 = document.createElement("script"),
+                  s0 = document.getElementsByTagName("script")[0];
+
+              s1.async = true;
+              s1.src = "https://embed.tawk.to/6a484d05a52c231d489455f6/default";
+              s1.charset = "UTF-8";
+              s1.setAttribute("crossorigin", "*");
+
+              s0.parentNode.insertBefore(s1, s0);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );
