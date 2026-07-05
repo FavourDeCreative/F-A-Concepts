@@ -198,20 +198,20 @@ export const featuredPostQuery = `
 // ========================================
 
 export const postsQuery = `
-*[
-  _type=="post" &&
-  featured != true
-] | order(publishedAt desc)[0...12]{
+*[_type=="post"] | order(publishedAt desc){
   _id,
   title,
   slug,
   excerpt,
   publishedAt,
   coverImage,
+  featured,
+
   author->{
     name,
     image
   },
+
   categories[]->{
     title,
     slug
