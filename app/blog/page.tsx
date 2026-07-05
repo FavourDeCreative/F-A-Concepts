@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import BlogHero from "@/components/blog/Hero";
 import FeaturedPost from "@/components/blog/FeaturedPost";
+import BlogGrid from "@/components/blog/BlogGrid";
 
 export const metadata: Metadata = {
   title: "Automotive Blog",
@@ -45,6 +46,7 @@ export default function BlogPage() {
     <main>
       <BlogHero />
       <FeaturedPost />
+      <BlogGrid />
     </main>
   );
 }
