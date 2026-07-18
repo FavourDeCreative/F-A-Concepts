@@ -174,6 +174,9 @@ export default function RootLayout({
             gtag('config', 'G-6Q22QTQHST');
           `}
         </Script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8570692267419551"
+     crossorigin="anonymous"></script>
       </body>
     </html>
   );
