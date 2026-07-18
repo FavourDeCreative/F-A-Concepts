@@ -25,6 +25,8 @@ export const metadata: Metadata = {
     "Vehicle upgrades",
     "Auto electrician",
     "Android screen installation",
+    "Apple CarPlay",
+    "Android Auto",
     "Ambient lighting",
     "Car detailing",
     "Infotainment installation",
@@ -39,14 +41,13 @@ export const metadata: Metadata = {
   ],
 
   creator: "Favouritech Auto Concepts",
-
   publisher: "Favouritech Auto Concepts",
-
   category: "Automotive",
 
   verification: {
     other: {
       "msvalidate.01": "B734DBC791CD1DC9FA4BB8079F412896",
+      "google-adsense-account": "ca-pub-8570692267419551",
     },
   },
 
@@ -141,7 +142,7 @@ export default function RootLayout({
 
         <Footer />
 
-        {/* Tawk.to Live Chat */}
+        {/* ================= Tawk.to Live Chat ================= */}
         <Script id="tawk-to" strategy="afterInteractive">
           {`
             var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -159,7 +160,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Analytics */}
+        {/* ================= Google Analytics ================= */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-6Q22QTQHST"
           strategy="afterInteractive"
@@ -174,14 +175,6 @@ export default function RootLayout({
             gtag('config', 'G-6Q22QTQHST');
           `}
         </Script>
-
-<Script
-  id="google-adsense"
-  async
-  strategy="afterInteractive"
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8570692267419551"
-  crossOrigin="anonymous"
-/>
       </body>
     </html>
   );
