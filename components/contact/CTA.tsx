@@ -64,7 +64,7 @@ export default function CTA() {
               </Link>
 
               <a
-                href="https://wa.me/2348012345678"
+                href="https://wa.me/2349112718068"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-full border px-8 py-4 font-semibold transition duration-300 btn2"
@@ -74,7 +74,7 @@ export default function CTA() {
               </a>
 
               <a
-                href="tel:+2348012345678"
+                href="tel:+2349112718068"
                 className="flex items-center gap-3 rounded-full border px-8 py-4 font-semibold transition duration-300 btn2"
               >
                 <FaPhoneAlt />
