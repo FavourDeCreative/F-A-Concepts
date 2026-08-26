@@ -37,6 +37,22 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+        
+        <div className="flex flex-wrap justify-center gap-5 mt-4">
+  <a
+    href="/privacy"
+    className="hover:text-red-500 transition"
+  >
+    Privacy Policy
+  </a>
+
+  <a
+    href="/terms"
+    className="hover:text-red-500 transition"
+  >
+    Terms of Service
+  </a>
+</div>
 
         {/* Services */}
         <div>
