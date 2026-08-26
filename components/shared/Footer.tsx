@@ -37,22 +37,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        
-        <div className="flex flex-wrap justify-center gap-5 mt-4">
-  <a
-    href="/privacy"
-    className="hover:text-red-500 transition"
-  >
-    Privacy Policy
-  </a>
-
-  <a
-    href="/terms"
-    className="hover:text-red-500 transition"
-  >
-    Terms of Service
-  </a>
-</div>
+      
 
         {/* Services */}
         <div>
@@ -84,9 +69,28 @@ export default function Footer() {
       </div>
 
       {/* Bottom */}
+      
+      
       <div className="border-t py-6 text-center text-sm opacity-70">
         © {new Date().getFullYear()} FAC - Favouritech Auto Concepts. All rights
         reserved.
+        
+  
+        <div className="flex flex-wrap justify-center gap-5 mt-4">
+  <a
+    href="/privacy"
+    className="hover:text-red-500 transition"
+  >
+    Privacy Policy
+  </a>
+
+  <a
+    href="/terms"
+    className="hover:text-red-500 transition"
+  >
+    Terms of Service
+  </a>
+</div>
       </div>
     </footer>
   );
