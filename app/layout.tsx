@@ -159,6 +159,13 @@ export default function RootLayout({
             })();
           `}
         </Script>
+<Script
+
+src="https://pl31369330.profitableratecpmnetwork.com/55/bb/46 /55bb46223c35d65b9d508b7b718e21b9.js"
+
+strategy="afterInteractive"
+
+/>
 
         {/* ================= Google Analytics ================= */}
         <Script
