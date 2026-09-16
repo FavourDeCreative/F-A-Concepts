@@ -71,7 +71,7 @@ export default function ContactHero() {
           </Link>
 
           <a
-            href="tel:+2348012345678"
+            href="tel:+2348167624681"
             className="flex items-center gap-3 rounded-full border px-8 py-4 font-semibold backdrop-blur-md transition btn2"
           >
             <FaPhoneAlt />
