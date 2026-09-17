@@ -134,21 +134,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning>
+        {/* Page Loader */}
         <PageLoader />
 
+        {/* Navigation */}
         <Navbar />
 
+        {/* Main Content */}
         {children}
 
+        {/* Footer */}
         <Footer />
 
-        {/* ================= Tawk.to Live Chat ================= */}
+        {/* =====================================================
+            TAWK.TO LIVE CHAT
+        ====================================================== */}
         <Script id="tawk-to" strategy="afterInteractive">
           {`
-            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-            (function() {
-              var s1 = document.createElement("script"),
-                  s0 = document.getElementsByTagName("script")[0];
+            var Tawk_API = Tawk_API || {};
+            var Tawk_LoadStart = new Date();
+
+            (function () {
+              var s1 = document.createElement("script");
+              var s0 = document.getElementsByTagName("script")[0];
 
               s1.async = true;
               s1.src = "https://embed.tawk.to/6a484d05a52c231d489455f6/default";
@@ -159,17 +167,30 @@ export default function RootLayout({
             })();
           `}
         </Script>
-<Script
 
-src="https://pl31369330.profitableratecpmnetwork.com/55/bb/46 /55bb46223c35d65b9d508b7b718e21b9.js"
+        {/* =====================================================
+            PROFITABLE RATE CPM - SCRIPT 1
+        ====================================================== */}
+        <Script
+          src="https://pl31369330.profitableratecpmnetwork.com/55/bb/46/55bb46223c35d65b9d508b7b718e21b9.js"
+          strategy="afterInteractive"
+        />
 
-strategy="afterInteractive"
+        {/* =====================================================
+            PROFITABLE RATE CPM - SCRIPT 2
+        ====================================================== */}
+        <Script
+          src="https://pl31369327.profitableratecpmnetwork.com/feaca5bfe53487c68f07b911fbe322e8/invoke.js"
+          strategy="afterInteractive"
+          data-cfasync="false"
+        />
 
-/>
-<script async="async" data-cfasync="false" src="https://pl31369327.profitableratecpmnetwork.com/feaca5bfe53487c68f07b911fbe322e8/invoke.js"></script>
-<div id="container-feaca5bfe53487c68f07b911fbe322e8"></div>
+        {/* CPM Ad Container */}
+        <div id="container-feaca5bfe53487c68f07b911fbe322e8" />
 
-        {/* ================= Google Analytics ================= */}
+        {/* =====================================================
+            GOOGLE ANALYTICS
+        ====================================================== */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-6Q22QTQHST"
           strategy="afterInteractive"
@@ -178,10 +199,13 @@ strategy="afterInteractive"
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
 
-            gtag('config', 'G-6Q22QTQHST');
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+
+            gtag("js", new Date());
+            gtag("config", "G-6Q22QTQHST");
           `}
         </Script>
       </body>
